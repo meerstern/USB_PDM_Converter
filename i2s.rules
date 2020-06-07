@@ -1,0 +1,84 @@
+
+(rules PCB i2s
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 16539)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +3V3 "/USB_VBUS" "Net-(C5-Pad1)" +1V8 "Net-(C8-Pad1)" "Net-(C10-Pad1)" "/MIC1_BIAS"
+    "/MIC2_BIAS" "/MIC3_BIAS" "/MIC4_BIAS" "/DMIC1_SD" "Net-(C20-Pad1)" "/IN1-" /IN2+ "Net-(C22-Pad1)"
+    "/IN2-" "Net-(C24-Pad1)" "/IN3-" /IN4+ "Net-(C26-Pad1)" "/IN4-" "Net-(F1-Pad1)" /RSTb
+    /CFGMODEb /SCL /SDA "/USB_DM" "/USB_DP" "/DMIC1_SCLK" "/DMIC2_SD" "/DMIC2_SCLK"
+    /SDOUT1 "/L_SDA" "/L_SCL" "Net-(R8-Pad2)" /SDOUT2 "Net-(TP17-Pad1)" "Net-(TP18-Pad1)" /LRCK
+    /MCLK /CRST /SCLK "/L_SDOUT1" "/L_SCLK" "/L_MCLK" "/L_SDOUT2" "/L_LRCK"
+    "/L_CRST" "Net-(C7-Pad1)" "Net-(F1-Pad2)" /SDOUT /IO15 /IO14 /IO13 /IO12
+    /IO11 /IO9 /IO8 /IO7 /IO6 /IO5 /IO4 /IO3
+    /IO2 /IO1 /IO0 "/SDOUT_EX"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
