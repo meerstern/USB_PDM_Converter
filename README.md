@@ -27,6 +27,10 @@ USB-PDM Converter with CS53L30 &amp; CP2615
   * アナログMEMSマイクを使用する場合はCP2615のパラメータ書き換えが必要です  
   * CP2615はFlashベースのため、パラメータ変更の回数制約はありません  
     
+## 告知
+  * CP2615は生産完了予定品となっています 新規開発用途には向いていません  
+  * 21年8月から22年4月頃販売の製品の一部に誤ったパラメータが書き込まれた製品があることが判明しました  
+  * 購入後、マイクとして動作しない等が見られた場合はお手数ですがCrescentまでお問い合わせください  
   
   <img src="https://github.com/meerstern/USB_PDM_Converter/blob/master/img1.jpg" width="360"> 
   <img src="https://github.com/meerstern/USB_PDM_Converter/blob/master/img2.jpg" width="360"> 
