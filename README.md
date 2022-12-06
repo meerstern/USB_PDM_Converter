@@ -26,12 +26,16 @@ USB-PDM Converter with CS53L30 &amp; CP2615
   * MIC2側を使用する場合はR3をRX1に置き換えてください  
   * アナログMEMSマイクを使用する場合はCP2615のパラメータ書き換えが必要です  
   * CP2615はFlashベースのため、パラメータ変更の回数制約はありません  
-    
+ 
+## 販売サイト
+  * [スイッチサイエンス][5]
+
 ## 告知
   * CP2615は生産完了予定品となっています 新規開発用途には向いていません  
   * 21年8月から22年4月頃販売の製品の一部に誤ったパラメータが書き込まれた製品があることが判明しました  
   * 購入後、マイクとして動作しない等が見られた場合はお手数ですがCrescentまでお問い合わせください  
   
+ 
   <img src="https://github.com/meerstern/USB_PDM_Converter/blob/master/img1.jpg" width="360"> 
   <img src="https://github.com/meerstern/USB_PDM_Converter/blob/master/img2.jpg" width="360"> 
   <img src="https://github.com/meerstern/USB_PDM_Converter/blob/master/img3.jpg" width="360"> 
@@ -40,3 +44,5 @@ USB-PDM Converter with CS53L30 &amp; CP2615
 [2]: https://www.cirrus.com/products/cs53l30/
 [3]: https://jp.silabs.com/products/development-tools/software/simplicity-studio
 [4]: https://www.switch-science.com/catalog/3379/
+[5]: https://www.switch-science.com/products/6488
+
